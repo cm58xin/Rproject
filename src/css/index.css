@@ -1,0 +1,213 @@
+.topnav { width: 100%; min-width: 1200px; height: 33px; background: #F2F2F2; position: relative; border-bottom: 1px solid #ddd; font-size: 13px; }
+
+.topnav ul:nth-child(1) { float: left; }
+
+.topnav ul:nth-child(1) li { padding: 0 5px; }
+
+.topnav ul:nth-child(1) li span { height: 33px; line-height: 33px; }
+
+.topnav ul:nth-child(1) li a { height: 33px; line-height: 33px; text-decoration: underline; color: black; }
+
+.topnav ul:nth-child(1) li span { display: inline; margin-left: 5px; }
+
+.topnav ul:nth-child(1) li .text { color: #EC3E7D; }
+
+.topnav ul:nth-child(2) { float: right; }
+
+.topnav ul:nth-child(2) li { padding: 0 10px; }
+
+.topnav ul:nth-child(2) li a { display: block; height: 33px; line-height: 33px; text-decoration: none; color: black; }
+
+.topnav ul:nth-child(2) li a i { padding: 0 8px; color: #EC3E7D; font-size: 13px; }
+
+.topnav ul:nth-child(2) li:hover span { color: #EC3E7D; }
+
+.topnav ul:nth-child(2) li:nth-child(1) { position: relative; }
+
+.topnav ul:nth-child(2) li:nth-child(2) { position: relative; }
+
+.topnav ul:nth-child(2) li:hover { background: white; border-bottom: 0.1px solid #ddd; }
+
+.topnav li { float: left; }
+
+.topnav .erweima img { top: 33px; position: absolute; display: none; }
+
+.topnav .zhanghu { position: absolute; z-index: 99; background: white; box-shadow: 3px 2px 4px #ccc,-3px 2px 4px #ccc; display: none; left: 1px; }
+
+.topnav .zhanghu p { display: block; width: 130px; height: 25px; font-size: 12px; line-height: 25px; padding-left: 37px; }
+
+.topnav .zhanghu p a:hover { color: #EC3E7D; }
+
+.topnav .mycar { position: absolute; box-shadow: 3px 2px 4px #ccc,-3px 2px 4px #ccc; width: 300px; height: 85px; left: -1px; z-index: 99; background: white; padding-left: 100px; padding-top: 20px; display: none; }
+
+.header { width: 100%; min-width: 1200px; padding-top: 42px; }
+
+.header img { height: 42px; width: 170px; float: left; }
+
+.header .hc { width: 480px; height: 80px; float: left; transform: translateX(200px); }
+
+.header .hc form .insert { display: block; width: 346px; height: 36px; border: 2px solid #EC3E7D; float: left; }
+
+.header .hc form .insert input { border: 0 none; width: 342px; height: 32px; }
+
+.header .hc form button { display: block; width: 90px; height: 36px; background: #EC3E7D; border: 0 none; color: white; float: left; }
+
+.header .hc ul li { float: left; margin-top: 8px; }
+
+.header .hc ul li span { padding: 0 14px 0 12px; color: #9999A5; border-left: 1px solid #9999A5; font-size: 13px; }
+
+.header .hc ul li:nth-child(1) span { border-left: 0 none; }
+
+.header .hc ul li a { text-decoration: none; }
+
+.nav { width: 100%; min-width: 1200px; }
+
+.nav ul li { float: left; }
+
+.nav ul li a { text-decoration: none; color: black; }
+
+.nav ul li a span { padding: 9px 24px; line-height: 36px; }
+
+.nav ul li a i { color: #D9D9D9; }
+
+.nav ul li:nth-child(2) { padding: 0 24px; height: 36px; }
+
+.nav ul li:nth-child(2) a { font-size: 0px; }
+
+.nav ul li:nth-child(2) span { padding: 0 0; }
+
+.nav ul li:nth-child(1) { width: 160px; line-height: 36px; font-weight: 700; background: #333333; }
+
+.nav ul li:nth-child(1) i { padding: 0 18px; color: white; }
+
+.nav ul li:nth-child(1) a { color: white; }
+
+.nav ul li:nth-child(5) { background: url("../img/img1/top_hot_icon.png") no-repeat 79px 0; }
+
+.nav ul li:nth-child(7) { background: url("../img/img1/top_hot_icon.png") no-repeat 107px 0; }
+
+.nav ul li:nth-child(9) { position: relative; }
+
+.nav ul li:nth-child(9) i { color: black; font-size: 12px; }
+
+.nav ul li:nth-child(9):hover i { color: #EC3E7D; }
+
+.nav ul li:hover span { color: #EC3E7D; }
+
+.nav .allbrand { width: 350px; height: 250px; position: absolute; background: white; left: 0; top: 36px; display: none; z-index: 99; }
+
+.nav .allbrand h5 { background: #ddd; height: 30px; line-height: 30px; padding-left: 20px; }
+
+.nav .allbrand p { display: block; height: 22px; width: 180px; line-height: 22px; padding-left: 20px; font-size: 12px; }
+
+.nav .allbrand h4 { font-size: 14px; border-top: 2px solid #ddd; width: 150px; padding-top: 10px; margin-left: 20px; margin-top: 10px; }
+
+.banner { position: relative; width: 100%; min-width: 1200px; height: 420px; overflow: hidden; }
+
+.banner .banul li { position: absolute; z-index: -99; display: none; }
+
+.banner .banul li:nth-child(9) { display: block; }
+
+.banner .navleft { width: 160px; height: 420px; background: #FA3778; position: absolute; }
+
+.banner .navleft ul li { border-top: 1px  dotted white; }
+
+.banner .navleft ul li a { display: block; height: 50px; line-height: 50px; text-decoration: none; color: white; }
+
+.banner .navleft ul li a span { padding-left: 25px; }
+
+.banner .navleft ul li:nth-child(2) span { padding-left: 52px; }
+
+.banner .navleft ul li:nth-child(3) span { padding-left: 52px; }
+
+.banner .navleft ul li i { display: inline-block; width: 50px; height: 40px; margin-top: 3px; float: left; }
+
+.banner .navleft ul li:nth-child(1) a { float: left; }
+
+.banner .navleft ul li:nth-child(1) i { background: url("../img/img1/navleft2.png") no-repeat 11px 0; }
+
+.banner .navleft ul li:nth-child(1):hover { background: white; }
+
+.banner .navleft ul li:nth-child(1):hover a { color: #FA3778; }
+
+.banner .navleft ul li:nth-child(1):hover i { background: url("../img/img1/navleft1.png") no-repeat 11px 0; }
+
+.banner .navleft ul li:nth-child(2) a { float: left; }
+
+.banner .navleft ul li:nth-child(2) i { background: url("../img/img1/navleft2.png") no-repeat 11px -33px; }
+
+.banner .navleft ul li:nth-child(2):hover { background: white; }
+
+.banner .navleft ul li:nth-child(2):hover a { color: #FA3778; }
+
+.banner .navleft ul li:nth-child(2):hover i { background: url("../img/img1/navleft1.png") no-repeat 11px -33px; }
+
+.banner .navleft ul li:nth-child(3) a { float: left; }
+
+.banner .navleft ul li:nth-child(3) i { background: url("../img/img1/navleft2.png") no-repeat 11px -66px; }
+
+.banner .navleft ul li:nth-child(3):hover { background: white; }
+
+.banner .navleft ul li:nth-child(3):hover a { color: #FA3778; }
+
+.banner .navleft ul li:nth-child(3):hover i { background: url("../img/img1/navleft1.png") no-repeat 11px -66px; }
+
+.banner .navleft ul li:nth-child(4) a { float: left; }
+
+.banner .navleft ul li:nth-child(4) i { background: url("../img/img1/navleft2.png") no-repeat 11px -99px; }
+
+.banner .navleft ul li:nth-child(4):hover { background: white; }
+
+.banner .navleft ul li:nth-child(4):hover a { color: #FA3778; }
+
+.banner .navleft ul li:nth-child(4):hover i { background: url("../img/img1/navleft1.png") no-repeat 11px -99px; }
+
+.banner .navleft ul li:nth-child(5) a { float: left; }
+
+.banner .navleft ul li:nth-child(5) i { background: url("../img/img1/navleft2.png") no-repeat 11px -132px; }
+
+.banner .navleft ul li:nth-child(5):hover { background: white; }
+
+.banner .navleft ul li:nth-child(5):hover a { color: #FA3778; }
+
+.banner .navleft ul li:nth-child(5):hover i { background: url("../img/img1/navleft1.png") no-repeat 11px -132px; }
+
+.banner .navleft ul li:nth-child(6) a { float: left; }
+
+.banner .navleft ul li:nth-child(6) i { background: url("../img/img1/navleft2.png") no-repeat 11px -165px; }
+
+.banner .navleft ul li:nth-child(6):hover { background: white; }
+
+.banner .navleft ul li:nth-child(6):hover a { color: #FA3778; }
+
+.banner .navleft ul li:nth-child(6):hover i { background: url("../img/img1/navleft1.png") no-repeat 11px -165px; }
+
+.banner .navleft ul li:nth-child(7) a { float: left; }
+
+.banner .navleft ul li:nth-child(7) i { background: url("../img/img1/navleft2.png") no-repeat 11px -198px; }
+
+.banner .navleft ul li:nth-child(7):hover { background: white; }
+
+.banner .navleft ul li:nth-child(7):hover a { color: #FA3778; }
+
+.banner .navleft ul li:nth-child(7):hover i { background: url("../img/img1/navleft1.png") no-repeat 11px -198px; }
+
+.banner .navleft ul li:nth-child(8) a { float: left; }
+
+.banner .navleft ul li:nth-child(8) i { background: url("../img/img1/navleft2.png") no-repeat 11px -231px; }
+
+.banner .navleft ul li:nth-child(8):hover { background: white; }
+
+.banner .navleft ul li:nth-child(8):hover a { color: #FA3778; }
+
+.banner .navleft ul li:nth-child(8):hover i { background: url("../img/img1/navleft1.png") no-repeat 11px -231px; }
+
+.banner .navleft ul li:nth-child(9) a { float: left; }
+
+.banner .navleft ul li:nth-child(9) i { background: url("../img/img1/navleft2.png") no-repeat 11px -264px; }
+
+.banner .navleft ul li:nth-child(9):hover { background: white; }
+
+.banner .navleft ul li:nth-child(9):hover a { color: #FA3778; }
+
+.banner .navleft ul li:nth-child(9):hover i { background: url("../img/img1/navleft1.png") no-repeat 11px -264px; }
