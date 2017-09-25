@@ -1,0 +1,30 @@
+{
+  "name": "shashawang",
+  "version": "1.0.0",
+  "description": "this is personal project",
+  "main": "gulpfile.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rensiming/Rproject.git"
+  },
+  "keywords": [
+    "莎莎网"
+  ],
+  "author": "rsm",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rensiming/Rproject/issues"
+  },
+  "homepage": "https://github.com/rensiming/Rproject#readme"
+}
