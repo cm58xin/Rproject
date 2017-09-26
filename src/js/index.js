@@ -1,14 +1,18 @@
 require.config({
     paths:{
         jquery:"../lib/jquery-3.2.1",
-
+        backtop:"./backTOP",
     }
 
 })
 
 
-require(['jquery'],function($){
+require(['jquery','backtop'],function($,btop){
+   
+// 将footer.html文件load进首页
+     $('#footer').load('html/footer.html');
     
+
 // 二维码
     $('.w1').mouseover(function(){
            $('.w3').show();
@@ -33,9 +37,9 @@ require(['jquery'],function($){
 
 // 购物车
     $('.car').mouseover(function(){
-            $('.mycar').stop().slideDown();   
+            $('.mycar').show();   
         }).mouseleave(function() {
-             $('.mycar').stop().slideUp();
+             $('.mycar').hide();
         });
 
 // 轮播图
@@ -130,7 +134,7 @@ $('.yinger').mouseenter(function(){
     $('#yinger').hide();
  }); 
 
-
+//轮播公告
  var copyItem=$('#gonggao').children()[0].cloneNode(true)
  // console.log($('#gonggao').children())
  // console.log(copyItem)
@@ -148,11 +152,39 @@ $('.yinger').mouseenter(function(){
      $('#gonggao').animate({top:top*j})
  },3000)
 
+// 返回顶部
+    btop.bb();
 
+    //右边导航条
+    $('.me').mouseenter(function(){
+           $('#me').stop().animate({opacity:1,left:-80});
+    }).mouseleave(function(){
+          $('#me').stop().animate({opacity:0,left:-100});;
+    })
 
+    $('.shou').mouseenter(function(){
+           $('#shou').stop().animate({opacity:1,left:-80});
+    }).mouseleave(function(){
+          $('#shou').stop().animate({opacity:0,left:-100});;
+    })
 
+    $('.zuji').mouseenter(function(){
+           $('#zuji').stop().animate({opacity:1,left:-80});
+    }).mouseleave(function(){
+          $('#zuji').stop().animate({opacity:0,left:-100});;
+    })
 
+    $('.rightkefu').mouseenter(function(){
+           $('#rightkefu').stop().animate({opacity:1,left:-80});
+    }).mouseleave(function(){
+          $('#rightkefu').stop().animate({opacity:0,left:-100});;
+    })
 
+    $('.righterweima').mouseenter(function(){
+           $('#righterweima').stop().animate({opacity:1,left:-100});
+    }).mouseleave(function(){
+          $('#righterweima').stop().animate({opacity:0,left:-140});;
+    })
 
 
 })

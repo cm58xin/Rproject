@@ -119,7 +119,7 @@
 .nav .imb2 img:hover { border-color: #EC3E7D; opacity: 1; }
 
 /* 轮播图*/
-.banner { position: relative; width: 100%; min-width: 1200px; height: 420px; /* 左边导航条及三级导航条*/ }
+.banner { position: relative; width: 100%; min-width: 1200px; height: 420px; overflow: hidden; /* 左边导航条及三级导航条*/ }
 
 .banner .banul li { position: absolute; z-index: -99; display: none; }
 
@@ -270,21 +270,21 @@
 .announcement .container > ul a:hover { color: #EC3E7D; }
 
 /*承诺免邮*/
-.promise { background: #F2F2F2; }
+#promise { background: #F2F2F2; }
 
-.promise .container div { width: 170px; height: 126px; float: left; margin: 0 32px; background: url("../img/img1/promise_icon.png") no-repeat 0 57px; padding-left: 48px; }
+#promise .container div { width: 170px; height: 126px; float: left; margin: 0 32px; background: url("../img/img1/promise_icon.png") no-repeat 0 57px; padding-left: 48px; }
 
-.promise .container div:nth-child(2) { margin: 0 32px; background: url("../img/img1/promise_icon.png") no-repeat -54px 57px; }
+#promise .container div:nth-child(2) { margin: 0 32px; background: url("../img/img1/promise_icon.png") no-repeat -54px 57px; }
 
-.promise .container div:nth-child(3) { margin: 0 32px; background: url("../img/img1/promise_icon.png") no-repeat -112px 57px; }
+#promise .container div:nth-child(3) { margin: 0 32px; background: url("../img/img1/promise_icon.png") no-repeat -112px 57px; }
 
-.promise .container div:nth-child(4) { margin: 0 32px; background: url("../img/img1/promise_icon.png") no-repeat -177px 57px; }
+#promise .container div:nth-child(4) { margin: 0 32px; background: url("../img/img1/promise_icon.png") no-repeat -177px 57px; }
 
-.promise .container div:nth-child(5) { margin: 0 32px; background: url("../img/img1/promise_icon.png") no-repeat -232px 57px; }
+#promise .container div:nth-child(5) { margin: 0 32px; background: url("../img/img1/promise_icon.png") no-repeat -232px 57px; }
 
-.promise .container h4 { padding: 53px 0 0 0; font-size: 18px; background: #F2F2F2; }
+#promise .container h4 { padding: 53px 0 0 0; font-size: 18px; background: #F2F2F2; }
 
-.promise .container p { font-size: 13px; padding-top: 8px; color: #999999; background: #F2F2F2; }
+#promise .container p { font-size: 13px; padding-top: 8px; color: #999999; background: #F2F2F2; }
 
 /*每日必看*/
 .mustlook { background: #F2F2F2; }
@@ -326,13 +326,13 @@
 
 .linheader h5 { text-align: center; font-size: 17px; margin-top: 10px; }
 
-#limit { width: 1180px; height: 360px; margin-bottom: 12px; }
+#limit { width: 1171px; height: 360px; margin-bottom: 12px; }
 
 #limit:hover { box-shadow: 0  5px 10px #ccc,0 5px 10px #ddd; }
 
 #limit .limit1 { float: left; }
 
-#limit .limit2, #limit .limit1 { background: white; position: relative; float: left; width: 590px; height: 360px; }
+#limit .limit2, #limit .limit1 { background: white; position: relative; float: left; width: 585px; height: 360px; }
 
 #limit { margin-bottom: 30px; }
 
@@ -363,3 +363,186 @@
 .limit2 h3 { display: block; width: 92px; height: 32px; background: #e93b78; color: #fff; font-size: 16px; line-height: 32px; text-align: center; position: absolute; right: 56px; bottom: 40px; }
 
 .limit2 h3:hover { background: #c53265; }
+
+/*销售排行榜*/
+.sellranking { background: #F2F2F2; }
+
+.sellranking .container { overflow: hidden; }
+
+.sellranking .container .ranking { margin: 50px 0 30px 0; overflow: hidden; }
+
+.franking { float: left; }
+
+.franking:nth-child(1) { margin-right: 12px; }
+
+.franking:nth-child(2) { margin-right: 12px; }
+
+.franking h3 { text-align: center; height: 64px; line-height: 64px; font-size: 22px; border-top: 2px solid #fc3f83; background: white; }
+
+.ra1 { width: 382px; height: 101px; }
+
+.ra1 .franking1 { float: left; }
+
+.ra1 .franking2 { background: white; position: relative; float: left; width: 272px; height: 80px; }
+
+.ra1 { background: white; border-top: 1px solid #ddd; }
+
+.ra1 .franking3 { position: relative; }
+
+.ra1 .franking3 img:nth-child(1) { position: absolute; }
+
+.ra1 .franking3 img:nth-child(2) { margin-top: 7px; }
+
+.franking2 p:nth-child(1) { font-size: 13px; margin-top: 10px; color: #222; }
+
+.franking2 p:nth-child(2) { margin-top: 20px; }
+
+.franking2 p:nth-child(2) span:nth-child(1) { color: #fc3f83; font-size: 16px; }
+
+.franking2 p:nth-child(2) span:nth-child(2) { color: #999; padding-left: 10px; font-size: 12px; }
+
+.franking2 p:nth-child(2) span:nth-child(3) { padding-left: 142px; color: #999; font-size: 12px; }
+
+/*新品*/
+.newgoods { background: #F2F2F2; padding-bottom: 15px; }
+
+.newgoods .container .newheader { margin: 50px 0 30px 0; overflow: hidden; }
+
+.nw .nt { width: 262px; height: 289px; position: relative; }
+
+.nw .nt p { position: absolute; }
+
+.nw .nt p span:nth-child(1) { display: block; width: 40px; height: 40px; font-size: 13px; line-height: 16px; background: #80b53f; text-align: center; padding-top: 5px; color: white; }
+
+.nw .nt > span { position: absolute; color: #999; line-height: 20px; height: 20px; font-size: 12px; right: 21px; }
+
+.nw .nt > span i { padding-right: 5px; }
+
+.nw #nt { width: 262px; margin: 15px 40px 0  0; padding: 10px; border: 1px solid #fff; float: left; background: white; }
+
+.nw #nt:nth-child(4) { margin-right: 0; }
+
+.nw #nt:nth-child(8) { margin-right: 0; }
+
+.nw #nt:hover { border: 1px solid #fc3f83; transition: all 0.5s; }
+
+.nw .title { width: 262px; margin-top: 15px; }
+
+.nw .title a { font-size: 13px; text-decoration: none; color: #222; }
+
+.nw .title p:nth-child(2) { margin-top: 18px; }
+
+.nw .title p:nth-child(2) span:nth-child(1) { color: #fc3f83; font-size: 18px; padding-right: 15px; }
+
+.nw .title p:nth-child(2) span:nth-child(2) { color: #999; font-size: 12px; padding-top: 10px; }
+
+/*footer*/
+#footer .promise { background: white; }
+
+#footer .promise .container div { width: 170px; height: 126px; float: left; margin: 0 32px; background: url("../img/img1/promise_icon.png") no-repeat 0 57px; padding-left: 48px; }
+
+#footer .promise .container div:nth-child(2) { margin: 0 32px; background: url("../img/img1/promise_icon.png") no-repeat -54px 57px; }
+
+#footer .promise .container div:nth-child(3) { margin: 0 32px; background: url("../img/img1/promise_icon.png") no-repeat -112px 57px; }
+
+#footer .promise .container div:nth-child(4) { margin: 0 32px; background: url("../img/img1/promise_icon.png") no-repeat -177px 57px; }
+
+#footer .promise .container div:nth-child(5) { margin: 0 32px; background: url("../img/img1/promise_icon.png") no-repeat -232px 57px; }
+
+#footer .promise .container h4 { padding: 53px 0 0 0; font-size: 15px; background: white; }
+
+#footer .promise .container p { font-size: 12px; padding-top: 8px; color: #999999; background: white; }
+
+#footer .mes ul { width: 90px; height: 170px; float: left; margin-right: 90px; }
+
+#footer .mes ul li a { height: 25px; line-height: 25px; text-decoration: none; color: #999; font-size: 12px; }
+
+#footer .mes ul li:nth-child(1) a { font-size: 13px; font-weight: 700; color: #222; }
+
+#footer .mes ul:last-child { width: 256px; height: 170px; margin-right: 0; }
+
+#footer .mes ul:last-child li { float: left; }
+
+#footer .mes ul:last-child li > p { text-align: center; font-size: 12px; font-weight: 700; margin-bottom: 3px; }
+
+#footer .mes ul:last-child li img { width: 128px; height: 128px; }
+
+#footer .tubiao { margin: 20px 0 20px 0; }
+
+#footer .tubiao li { float: left; background: url(../img/img1/tubiao.jpg) no-repeat 0 0; }
+
+#footer .tubiao li a { display: block; height: 60px; width: 103px; }
+
+#footer .tubiao li:nth-child(2) { background: url(../img/img1/tubiao.jpg) no-repeat -103px 0; }
+
+#footer .tubiao li:nth-child(3) { background: url(../img/img1/tubiao.jpg) no-repeat -205px 0; }
+
+#footer .tubiao li:nth-child(4) { background: url(../img/img1/tubiao.jpg) no-repeat -293px 0; }
+
+#footer .tubiao li:nth-child(5) { background: url(../img/img1/tubiao.jpg) no-repeat -384px 0; }
+
+#footer .tubiao li:nth-child(6) { background: url(../img/img1/tubiao.jpg) no-repeat -480px 0; }
+
+#footer .tubiao li:nth-child(7) { background: url(../img/img1/tubiao.jpg) no-repeat -580px 0; }
+
+#footer .tubiao li:nth-child(8) { background: url(../img/img1/tubiao.jpg) no-repeat -680px 0; }
+
+#footer .last { height: 70px; background: #000; }
+
+#footer .last ul { padding: 10px 0 20px 0; }
+
+#footer .last ul li { float: left; }
+
+#footer .last ul li a { display: block; height: 24px; line-height: 24px; font-size: 12px; padding: 2px 5px; color: white; text-decoration: none; }
+
+#footer .last ul li a span { padding-right: 11px; border-right: 1px solid white; }
+
+#footer .last h6 { display: block; color: white; padding-left: 3px; }
+
+.rightnav { position: relative; min-height: 500px; width: 38px; height: 919px; background: #4c4c4c; position: fixed; right: 0; top: 0; }
+
+.rightnav div { color: white; width: 80px; height: 30px; background: #4c4c4c; position: absolute; left: -100px; line-height: 30px; text-align: center; opacity: 0; }
+
+.rightnav div i { position: absolute; right: -10px; color: #4c4c4c; }
+
+.rightnav #me { bottom: 780px; }
+
+.rightnav #shou { bottom: 550px; }
+
+.rightnav #zuji { bottom: 500px; }
+
+.rightnav #rightkefu { bottom: 300px; }
+
+.rightnav #righterweima { bottom: 200px; width: 100px; height: 100px; left: -140px; }
+
+.rightnav p { display: block; width: 38px; text-align: center; }
+
+.rightnav p:hover { background: #E93B78; }
+
+.rightnav p a { color: white; text-decoration: none; }
+
+.rightnav p a i { color: #c69a62; font-size: 20px; }
+
+.rightnav .me { position: absolute; bottom: 780px; }
+
+.rightnav .me h5 { display: block; color: white; }
+
+.rightnav .bcar { position: absolute; bottom: 600px; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; padding: 8px  0 8px 0; }
+
+.rightnav .bcar i { color: #c69a62; font-size: 20px; }
+
+.rightnav .bcar span { color: white; font-size: 14px; }
+
+.rightnav .shou { position: absolute; bottom: 550px; }
+
+.rightnav .zuji { position: absolute; bottom: 500px; }
+
+.rightnav .rightkefu { position: absolute; bottom: 300px; }
+
+.rightnav .righterweima { position: absolute; bottom: 250px; }
+
+.rightnav .backTop { position: absolute; bottom: 200px; }
+
+.rightnav .backTop i { color: #c69a62; font-size: 24px; }
+
+.rightnav .backTop:hover { cursor: pointer; background: #4c4c4c; }
