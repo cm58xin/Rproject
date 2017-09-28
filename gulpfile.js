@@ -3,7 +3,7 @@ var gulp=require('gulp');
 var sass=require('gulp-sass');
 
 gulp.task('compileSass',function(){
-     gulp.src('./src/sass/index.scss')
+     gulp.src(['./src/sass/index.scss','./src/sass/common.scss'])
     .pipe(sass({outputStyle:'compact'}).on('error',sass.logError))
     .pipe(gulp.dest('./src/css/'))
 })
@@ -36,6 +36,6 @@ gulp.task('hear',function(){
 //         files:['./src/**/*.html','./src/css/*.css','./src/api/*.php']
 //     });
 
-//     // 监听sass的修改
-//     gulp.watch('./src/sass/*.scss',['compileSass']);
+    // 监听sass的修改
+    gulp.watch('./src/sass/*.scss',['compileSass']);
 // });

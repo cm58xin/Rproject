@@ -217,7 +217,7 @@ $height:33px;
       }
     } 
 
-    /* 左边导航条及三级导航条*/
+    /* 左边三级导航条*/
   .navleft{
         width:160px;
         height:420px;
@@ -395,42 +395,39 @@ $height:33px;
                      
                    }
                  }      
-
             }
-        }
-    #face,#cai,#xiang,#mei,#xiong,#huli,#man,#yinger{
-      position:absolute;
-      z-index:2;
-      border:1px solid #EC3E7D;
-      background:white;
-      left:160px;
-      display:none;
-      >div{  
-            margin-top:10px;
-            padding-left:15px;
-           >h1{font-size:12px;font-weight:700;}
-           >a{padding-right:10px;font-size:12px;text-decoration:none;
-            &:hover{color:#EC3E7D;}
-           }
-           .mo{
-            color:#EC3E7D;
-           }
-      }
-    
-    }
-  #face{
-    width:310px;
-    height:400px;
-  }  
-  #cai,#huli{ width:310px;
-      height:150px;}
-  
- #xiang,#mei,#xiong,#man,#yinger{ width:310px;
-      height:63px;}
-
-  
+        }   
+            #face,#cai,#xiang,#mei,#xiong,#huli,#man,#yinger{
+              position:absolute;
+              z-index:2;
+              border:1px solid #EC3E7D;
+              background:white;
+              left:160px;
+              display:none;
+              >div{  
+                    margin-top:10px;
+                    padding-left:15px;
+                   >h1{font-size:12px;font-weight:700;}
+                   >a{padding-right:10px;font-size:12px;text-decoration:none;
+                    &:hover{color:#EC3E7D;}
+                   }
+                   .mo{
+                    color:#EC3E7D;
+                   }
+                }  
+            }
+          #face{
+            width:310px;
+            height:400px;
+          }  
+          #cai,#huli{ width:310px;
+              height:150px;}
+          
+         #xiang,#mei,#xiong,#man,#yinger{ width:310px;
+              height:63px;}
 }
 
+ /*轮播图页码*/
   .bpage{
     position:absolute;
     left:50%;
@@ -447,6 +444,7 @@ $height:33px;
     }
   }
  
+ /*滚动广告*/
  .announcement{
     background:#ececec;
     height:20px;
@@ -513,7 +511,9 @@ $height:33px;
      }   
    }    
 }
-  
+.mustlook  .container{
+  position:relative;
+}
   .lookheader{ margin:20px 0 35px 0 ;overflow:hidden;}
             
    #show{
@@ -640,6 +640,7 @@ $height:33px;
        }
   }
 }
+
 
 .franking{float:left;
   &:nth-child(1){
@@ -851,54 +852,70 @@ $height:33px;
 
 .rightnav{
   position:relative;
-  min-height:500px;
-  width:38px;height:919px;background:#4c4c4c;position:fixed;right:0;top:0;
-    div{color:white;width:80px;height:30px;background:#4c4c4c;position:absolute;left:-100px;line-height:30px;text-align:center;opacity:0;
+  min-height:919px;
+  width:30px;height:100%;background:#4c4c4c;position:fixed;right:0;top:0;
+    #me,#shou,#zuji,#rightkefu, #righterweima,#bcar{color:white;width:80px;height:30px;background:#4c4c4c;position:absolute;left:-100px;line-height:30px;text-align:center;opacity:0;z-index:4;
       i{position:absolute;right:-10px;color:#4c4c4c;}
     }
-     #me{bottom:780px;}  
-     #shou{ bottom:550px;}
-     #zuji{ bottom:500px;}
+     #me{bottom:710px;}  
+     #shou{ bottom:480px;}
+     #zuji{ bottom:430px;}
      #rightkefu{bottom:300px;}
      #righterweima{
-      bottom:200px;
+      bottom:250px;
       width:100px;height:100px;
       left:-140px;
      }
+     #bcar{width:230px;height:919px;background:white;z-index:5px;left:-230px;z-index:3;
+       box-shadow: -5px 0 5px #ccc;opacity:1;display:none;
+       h4{border-bottom:1px solid #ddd;height:41px;line-height:41px;text-align:left;padding-left:20px;font-size:14px;display:block;
+        span:nth-child(1){color:black;display:block;width:45px;height:40px;float:left;}
+        span:nth-child(2){color:black;display:block;border:1px solid #222;width:20px;height:20px;border-radius:50%;line-height:20px;text-align:center;float:left;margin:10px 0 10px 128px;
+          &:hover{cursor:pointer;}
+        }
+       }
+       .text{color:#222;padding:20px 10px;}
+      
+     }
+
     p{  
       display:block;
-      width:38px;
+      width:30px;
       text-align:center;
       &:hover{background:#E93B78;}
       a{color:white;
         text-decoration:none;
-        i{color:#c69a62;font-size:20px;}
+        i{color:#c69a62;font-size:16px;}
       }
     }
      .me{
       position:absolute;
-      bottom:780px;
+      bottom:710px;
       h5{display:block;color:white;}
     }
      .bcar{
-      position:absolute;
-      i{color:#c69a62;font-size:20px;}
-      span{
-        color:white;
-        font-size:14px;
-        } 
-      bottom:600px;
+      bottom:530px;
       border-top:1px solid #ccc;
       border-bottom:1px solid #ccc;
       padding:8px  0 8px 0;
+
+      &:hover{cursor:pointer;}
+      position:absolute;
+      i{color:#c69a62;font-size:16px;}
+      span{
+        color:white;
+        font-size:12px;
+         b{color:white;display:inline-block;width:18px;height:26px;background:#ec3e7d;line-height:26px;border-radius:10px;font-size:13px;
+        } 
+      }
     }
      .shou{
       position:absolute;
-      bottom:550px;
+      bottom:490px;
     }
      .zuji{
       position:absolute;
-      bottom:500px;
+      bottom:430px;
     }
     .rightkefu{
       position:absolute;
@@ -913,4 +930,59 @@ $height:33px;
       &:hover{cursor:pointer;background:#4c4c4c;}
   }  
     
+}
+
+.lnav{
+  width:100px;
+  background:white;
+  position:absolute;
+  top:87px;
+  left:-110px;
+  ul{
+    li{
+      padding-left:20px;
+      height:55px;width:100px;
+      border:1px solid white;
+      &:hover{background:#e93b78;
+              cursor:pointer;
+          span{
+             color:white;
+          }
+          i{
+            color:white;
+          }}
+    a{height:55px;text-align:center;line-height:55px;color:#222;text-decoration:none;
+    span{padding-left:7px;}
+    }
+    }
+
+  }
+  
+}
+
+.fixed{
+  width:100px;
+  background:white;
+  left:50px;
+  position:fixed;
+  z-index:10;
+  ul{
+    li{
+      padding-left:20px;
+      height:55px;width:100px;
+    a{display:block;height:55px;text-align:center;line-height:55px;color:#222;text-decoration:none;
+      span{padding-left:7px;}
+    }
+    }
+  }
+}
+
+.bianse{
+  background:#e93b78;
+  span{
+     color:white;
+  }
+  i{
+    color:white;
+  }
 }
