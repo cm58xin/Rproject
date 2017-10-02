@@ -403,23 +403,99 @@
 
 #zhuce .zc h5 { padding-top: 40px; color: #3e3e3e; }
 
-/* 面部皮肤的中心页面内容*/
-.facecontent { width: 100%; min-width: 1200px; padding-top: 40px; background: #f2f2f2; }
+/*右边固定的导航条*/
+.rightnav { position: relative; min-height: 919px; width: 30px; height: 100%; background: #4c4c4c; position: fixed; right: 0; top: 0; }
 
-.fleftnav { width: 253px; background: #fff; }
+.rightnav #me, .rightnav #shou, .rightnav #zuji, .rightnav #rightkefu, .rightnav #righterweima, .rightnav #bcar { color: white; width: 80px; height: 30px; background: #4c4c4c; position: absolute; left: -100px; line-height: 30px; text-align: center; opacity: 0; z-index: 4; }
 
-.fleftnav > h4 { color: #404040; border-left: 5px solid #c69a62; height: 48px; line-height: 48px; padding-left: 30px; font-size: 18px; }
+.rightnav #me i, .rightnav #shou i, .rightnav #zuji i, .rightnav #rightkefu i, .rightnav #righterweima i, .rightnav #bcar i { position: absolute; right: -10px; color: #4c4c4c; }
 
-.fleftnav > h6 { color: #565d67; height: 51px; line-height: 51px; padding-left: 30px; background: #e8e6e7; margin: 0; border-top: 1px solid white; }
+.rightnav #me { bottom: 650px; }
 
-.fleftnav > h6 i { font-size: 12px; padding-right: 15px; color: #565d67; }
+.rightnav #shou { bottom: 440px; }
 
-.fleftnav ul { height: 0px; overflow: hidden; }
+.rightnav #zuji { bottom: 400px; }
 
-.fleftnav ul li a { display: block; width: 150px; height: 32px; color: #828282; padding-left: 55px; text-decoration: none; line-height: 32px; font-size: 12px; }
+.rightnav #rightkefu { bottom: 300px; }
 
-.fleftnav ul li a i { font-size: 12px; padding-right: 7px; color: #565d67; }
+.rightnav #righterweima { bottom: 250px; width: 100px; height: 100px; left: -140px; }
 
-.fleftnav ul li a:hover { color: #c69a62; }
+.rightnav #bcar { width: 230px; height: 919px; background: white; z-index: 5px; left: -230px; z-index: 3; box-shadow: -5px 0 5px #ccc; opacity: 1; position: absolute; top: 0px; display: none; }
 
-.fleftnav ul li a:hover i { color: #c69a62; }
+.rightnav #bcar h4 { border-bottom: 1px solid #ddd; height: 41px; line-height: 41px; text-align: left; padding-left: 20px; font-size: 14px; display: block; }
+
+.rightnav #bcar h4 span:nth-child(1) { color: black; display: block; width: 45px; height: 40px; float: left; }
+
+.rightnav #bcar h4 span:nth-child(2) { color: black; display: block; border: 1px solid #222; width: 20px; height: 20px; border-radius: 50%; line-height: 20px; text-align: center; float: left; margin: 10px 0 10px 128px; }
+
+.rightnav #bcar h4 span:nth-child(2):hover { cursor: pointer; }
+
+.rightnav #bcar .text { color: #222; padding: 20px 10px; }
+
+.rightnav p { display: block; width: 30px; text-align: center; }
+
+.rightnav p:nth-child(1) { margin-top: 80px; }
+
+.rightnav p:nth-child(1) a { font-size: 10px; }
+
+.rightnav p:hover { background: #E93B78; }
+
+.rightnav p a { color: white; text-decoration: none; }
+
+.rightnav p a i { color: #c69a62; font-size: 16px; }
+
+.rightnav .me { position: absolute; bottom: 650px; }
+
+.rightnav .me h5 { display: block; color: white; }
+
+.rightnav .bcar { bottom: 470px; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; padding: 8px  0 8px 0; position: absolute; }
+
+.rightnav .bcar:hover { cursor: pointer; }
+
+.rightnav .bcar i { color: #c69a62; font-size: 16px; }
+
+.rightnav .bcar span { color: white; font-size: 12px; }
+
+.rightnav .bcar span b { color: white; display: inline-block; width: 18px; height: 26px; background: #ec3e7d; line-height: 26px; border-radius: 10px; font-size: 13px; }
+
+.rightnav .shou { position: absolute; bottom: 440px; }
+
+.rightnav .zuji { position: absolute; bottom: 400px; }
+
+.rightnav .rightkefu { position: absolute; bottom: 300px; }
+
+.rightnav .righterweima { position: absolute; bottom: 250px; }
+
+.rightnav .backTop { position: absolute; bottom: 200px; }
+
+.rightnav .backTop i { color: #c69a62; font-size: 24px; }
+
+.rightnav .backTop:hover { cursor: pointer; background: #4c4c4c; }
+
+.lnav { width: 100px; background: white; position: absolute; top: 87px; left: -110px; }
+
+.lnav ul li { padding-left: 20px; height: 55px; width: 100px; border: 1px solid white; }
+
+.lnav ul li:hover { background: #e93b78; cursor: pointer; }
+
+.lnav ul li:hover span { color: white; }
+
+.lnav ul li:hover i { color: white; }
+
+.lnav ul li a { height: 55px; text-align: center; line-height: 55px; color: #222; text-decoration: none; }
+
+.lnav ul li a span { padding-left: 7px; }
+
+.fixed { width: 100px; background: white; left: 50px; position: fixed; z-index: 10; }
+
+.fixed ul li { padding-left: 20px; height: 55px; width: 100px; }
+
+.fixed ul li a { display: block; height: 55px; text-align: center; line-height: 55px; color: #222; text-decoration: none; }
+
+.fixed ul li a span { padding-left: 7px; }
+
+.bianse { background: #e93b78; }
+
+.bianse span { color: white; }
+
+.bianse i { color: white; }

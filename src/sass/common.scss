@@ -584,24 +584,145 @@ $height:33px;
 
 
 
-/* 面部皮肤的中心页面内容*/
-.facecontent{width:100%;min-width:1200px;padding-top:40px;background:#f2f2f2;}
-.fleftnav{width:253px;background:#fff;
-  >h4{color:#404040;border-left:5px solid #c69a62;height:48px;line-height:48px;padding-left:30px;font-size:18px;}
-  >h6{color:#565d67;height:51px;line-height:51px;padding-left:30px;background:#e8e6e7;margin:0;border-top:1px solid white;
-    i{font-size:12px;padding-right:15px;color:#565d67}
-  }}
+/*右边固定的导航条*/
+.rightnav{
+      position:relative;
+      min-height:919px;
+      width:30px;height:100%;background:#4c4c4c;position:fixed;right:0;top:0;
+        #me,#shou,#zuji,#rightkefu, #righterweima,#bcar{color:white;width:80px;height:30px;background:#4c4c4c;position:absolute;left:-100px;line-height:30px;text-align:center;opacity:0;z-index:4;
+          i{position:absolute;right:-10px;color:#4c4c4c;}
+        }
+         #me{bottom:650px;}  
+         #shou{ bottom:440px;}
+         #zuji{ bottom:400px;}
+         #rightkefu{bottom:300px;}
+         #righterweima{
+          bottom:250px;
+          width:100px;height:100px;
+          left:-140px;
+         }
+        #bcar{width:230px;height:919px;background:white;z-index:5px;left:-230px;z-index:3;
+           box-shadow: -5px 0 5px #ccc;opacity:1;position:absolute;top:0px;
+           display:none;
+           h4{border-bottom:1px solid #ddd;height:41px;line-height:41px;text-align:left;padding-left:20px;font-size:14px;display:block;
+          span:nth-child(1){color:black;display:block;width:45px;height:40px;float:left;}
+          span:nth-child(2){color:black;display:block;border:1px solid #222;width:20px;height:20px;border-radius:50%;line-height:20px;text-align:center;float:left;margin:10px 0 10px 128px;
+            &:hover{cursor:pointer;}
+            }
+         }
+           .text{color:#222;padding:20px 10px;}
+      
+     }
 
-.fleftnav {
+            p{  
+              display:block;
+              width:30px;
+              text-align:center;
+              &:nth-child(1){
+                margin-top:80px;
+                a{font-size:10px;}
+              }
+              &:hover{background:#E93B78;}
+              a{color:white;
+                text-decoration:none;
+                i{color:#c69a62;font-size:16px;}
+              }
+            }
+             .me{
+              position:absolute;
+              bottom:650px;
+              h5{display:block;color:white;}
+            }
+             .bcar{
+              bottom:470px;
+              border-top:1px solid #ccc;
+              border-bottom:1px solid #ccc;
+              padding:8px  0 8px 0;
+
+              &:hover{cursor:pointer;}
+              position:absolute;
+              i{color:#c69a62;font-size:16px;}
+              span{
+                color:white;
+                font-size:12px;
+                 b{color:white;display:inline-block;width:18px;height:26px;background:#ec3e7d;line-height:26px;border-radius:10px;font-size:13px;
+                } 
+              }
+            }
+             .shou{
+              position:absolute;
+              bottom:440px;
+            }
+             .zuji{
+              position:absolute;
+              bottom:400px;
+            }
+            .rightkefu{
+              position:absolute;
+              bottom:300px;
+            }
+           .righterweima{position:absolute;
+              bottom:250px;}
+          .backTop{
+              position:absolute;
+              bottom:200px;
+               i{color:#c69a62;font-size:24px;}
+              &:hover{cursor:pointer;background:#4c4c4c;}
+          }  
+            
+}
+
+.lnav{
+  width:100px;
+  background:white;
+  position:absolute;
+  top:87px;
+  left:-110px;
   ul{
-     height:0px;
-     overflow:hidden;
     li{
-      a{display:block;width:150px;height:32px;color:#828282;padding-left:55px;text-decoration:none;line-height:32px;font-size:12px;
-         i{font-size:12px;padding-right:7px;color:#565d67;}
-        &:hover{color:#c69a62;}
-         &:hover i{color:#c69a62;}
-       }
+      padding-left:20px;
+      height:55px;width:100px;
+      border:1px solid white;
+      &:hover{background:#e93b78;
+              cursor:pointer;
+          span{
+             color:white;
+          }
+          i{
+            color:white;
+          }}
+    a{height:55px;text-align:center;line-height:55px;color:#222;text-decoration:none;
+    span{padding-left:7px;}
     }
+    }
+
+  }
+  
+}
+
+.fixed{
+  width:100px;
+  background:white;
+  left:50px;
+  position:fixed;
+  z-index:10;
+  ul{
+    li{
+      padding-left:20px;
+      height:55px;width:100px;
+    a{display:block;height:55px;text-align:center;line-height:55px;color:#222;text-decoration:none;
+      span{padding-left:7px;}
+    }
+    }
+  }
+}
+
+.bianse{
+  background:#e93b78;
+  span{
+     color:white;
+  }
+  i{
+    color:white;
   }
 }

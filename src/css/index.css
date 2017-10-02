@@ -100,7 +100,7 @@
 
 .nav ul li:hover span { color: #EC3E7D; }
 
-.nav .allbrand { width: 350px; position: absolute; background: white; left: 0; top: 36px; display: none; z-index: 99; }
+.nav .allbrand { width: 350px; position: absolute; background: white; left: -10px; top: 36px; display: none; z-index: 99; }
 
 .nav .allbrand h5 { background: #ddd; height: 30px; line-height: 30px; padding-left: 20px; color: #EC3E7D; }
 
@@ -256,7 +256,7 @@
 .banner .bpage .active { background: #EC3E7D; transition: all 0.8s; }
 
 /*滚动广告*/
-.announcement { background: #ececec; height: 20px; }
+.announcement { width: 100%; min-width: 1200px; background: #ececec; height: 20px; }
 
 .announcement .container { position: relative; height: 20px; overflow: hidden; }
 
@@ -271,7 +271,7 @@
 .announcement .container > ul a:hover { color: #EC3E7D; }
 
 /*承诺免邮*/
-#promise { background: #F2F2F2; }
+#promise { background: #F2F2F2; width: 100%; min-width: 1200px; }
 
 #promise .container div { width: 170px; height: 126px; float: left; margin: 0 32px; background: url("../img/img1/promise_icon.png") no-repeat 0 57px; padding-left: 48px; }
 
@@ -288,11 +288,11 @@
 #promise .container p { font-size: 13px; padding-top: 8px; color: #999999; background: #F2F2F2; }
 
 /*每日必看*/
-.mustlook { background: #F2F2F2; }
+.mustlook { width: 100%; min-width: 1200px; background: #F2F2F2; }
 
 .mustlook a { display: block; float: left; }
 
-.mustlook a:nth-child(even) { margin-right: 100px; }
+.mustlook a:nth-child(even) { margin-left: 100px; }
 
 .mustlook .container { position: relative; }
 
@@ -319,7 +319,7 @@
 .mustlook h4:hover { background: #c53265; }
 
 /*限时抢购*/
-.limitsell { background: #F2F2F2; }
+.limitsell { width: 100%; min-width: 1200px; background: #F2F2F2; }
 
 .limitsell h1 { display: block; width: 160px; border-radius: 8px; background: #fc3f83; height: 36px; line-height: 36px; margin: 0 auto; font-size: 16px; text-align: center; }
 
@@ -368,7 +368,7 @@
 .limit2 h3:hover { background: #c53265; }
 
 /*销售排行榜*/
-.sellranking { background: #F2F2F2; }
+.sellranking { width: 100%; min-width: 1200px; background: #F2F2F2; }
 
 .sellranking .container { overflow: hidden; }
 
@@ -407,7 +407,7 @@
 .franking2 p:nth-child(2) span:nth-child(3) { padding-left: 142px; color: #999; font-size: 12px; }
 
 /*新品*/
-.newgoods { background: #F2F2F2; padding-bottom: 15px; }
+.newgoods { width: 100%; min-width: 1200px; background: #F2F2F2; padding-bottom: 15px; }
 
 .newgoods .container .newheader { margin: 50px 0 30px 0; overflow: hidden; }
 
@@ -440,7 +440,7 @@
 .nw .title p:nth-child(2) span:nth-child(2) { color: #999; font-size: 12px; padding-top: 10px; }
 
 /*footer*/
-#footer .promise { background: white; }
+#footer .promise { width: 100%; min-width: 1200px; background: white; }
 
 #footer .promise .container div { width: 170px; height: 126px; float: left; margin: 0 32px; background: url("../img/img1/promise_icon.png") no-repeat 0 57px; padding-left: 48px; }
 
@@ -490,7 +490,7 @@
 
 #footer .tubiao li:nth-child(8) { background: url(../img/img1/tubiao.jpg) no-repeat -680px 0; }
 
-#footer .last { height: 70px; background: #000; }
+#footer .last { width: 100%; min-width: 1200px; height: 70px; background: #000; }
 
 #footer .last ul { padding: 10px 0 20px 0; }
 
@@ -502,6 +502,7 @@
 
 #footer .last h6 { display: block; color: white; padding-left: 3px; }
 
+/*右边固定的导航条*/
 .rightnav { position: relative; min-height: 919px; width: 30px; height: 100%; background: #4c4c4c; position: fixed; right: 0; top: 0; }
 
 .rightnav #me, .rightnav #shou, .rightnav #zuji, .rightnav #rightkefu, .rightnav #righterweima, .rightnav #bcar { color: white; width: 80px; height: 30px; background: #4c4c4c; position: absolute; left: -100px; line-height: 30px; text-align: center; opacity: 0; z-index: 4; }

@@ -1,0 +1,77 @@
+@charset "UTF-8";
+/* 面部皮肤的中间页面内容*/
+.facecontent { width: 100%; min-width: 1200px; padding-top: 40px; background: #f2f2f2; }
+
+.fleftnav { width: 253px; background: #fff; }
+
+.fleftnav > h4 { color: #404040; border-left: 5px solid #c69a62; height: 48px; line-height: 48px; padding-left: 30px; font-size: 18px; }
+
+.fleftnav > h6 { color: #565d67; height: 51px; line-height: 51px; padding-left: 30px; background: #e8e6e7; margin: 0; border-top: 1px solid white; }
+
+.fleftnav > h6 i { font-size: 12px; padding-right: 15px; color: #565d67; }
+
+.fleftnav { float: left; }
+
+.fleftnav ul { height: 0px; overflow: hidden; }
+
+.fleftnav ul li a { display: block; width: 150px; height: 32px; color: #828282; padding-left: 55px; text-decoration: none; line-height: 32px; font-size: 12px; }
+
+.fleftnav ul li a i { font-size: 12px; padding-right: 7px; color: #565d67; }
+
+.fleftnav ul li a:hover { color: #c69a62; }
+
+.fleftnav ul li a:hover i { color: #c69a62; }
+
+.fright { width: 800px; height: 800px; background: white; float: left; margin-left: 40px; }
+
+.fright h6 { height: 43px; line-height: 43px; border-bottom: 1px solid #ddd; color: #8d8d8d; font-size: 13px; }
+
+.fright h6 span:nth-child(1) { display: inline-block; width: 115px; padding-left: 20px; height: 30px; float: left; }
+
+.fright h6 span:nth-child(2) { display: inline-block; color: #c69a62; width: 90px; height: 30px; float: right; }
+
+.fright h5 { border-top: 1px solid #e9e9e9; height: 43px; line-height: 43px; border-bottom: 1px solid #ddd; color: #8d8d8d; font-size: 13px; }
+
+.fright h5 span:nth-child(1) { display: inline-block; width: 115px; padding-left: 20px; height: 30px; float: left; }
+
+.fright h5 span:nth-child(2) { display: inline-block; color: #3e3e3e; width: 115px; height: 30px; float: right; }
+
+.fright h5:hover { cursor: pointer; }
+
+.classfiy > span:nth-child(1) { padding-left: 20px; display: block; width: 118px; height: 26px; line-height: 26px; color: #8d8d8d; font-size: 13px; float: left; }
+
+.classfiy > span:nth-child(3) { display: block; width: 60px; height: 26px; line-height: 26px; color: #c69a62; font-size: 13px; float: left; margin-left: 40px; }
+
+.classfiy > span:nth-child(3):hover { cursor: pointer; }
+
+.classfiy ul { width: 568px; height: 100px; overflow: hidden; float: left; }
+
+.classfiy ul li { float: left; height: 33px; width: 180px; line-height: 33px; }
+
+.classfiy ul li a { font-size: 13px; text-decoration: none; color: #333; }
+
+.pingpai, .gongxiao, .more, .lmore { border-top: 1px solid #e9e9e9; }
+
+.pingpai > span:nth-child(1), .gongxiao > span:nth-child(1), .more > span:nth-child(1), .lmore > span:nth-child(1) { padding-left: 20px; display: block; width: 118px; height: 26px; line-height: 26px; color: #8d8d8d; font-size: 13px; float: left; }
+
+.pingpai > span:nth-child(3), .gongxiao > span:nth-child(3), .more > span:nth-child(3), .lmore > span:nth-child(3) { display: block; width: 60px; height: 26px; line-height: 26px; color: #c69a62; font-size: 13px; float: left; }
+
+.pingpai > span:nth-child(3):hover, .gongxiao > span:nth-child(3):hover, .more > span:nth-child(3):hover, .lmore > span:nth-child(3):hover { cursor: pointer; }
+
+.pingpai ul, .gongxiao ul, .more ul, .lmore ul { width: 568px; height: 100px; overflow: hidden; float: left; }
+
+.pingpai ul li, .gongxiao ul li, .more ul li, .lmore ul li { float: left; height: 33px; width: 180px; line-height: 33px; }
+
+.pingpai ul li a, .gongxiao ul li a, .more ul li a, .lmore ul li a { font-size: 13px; text-decoration: none; color: #333; }
+
+.pingpai p, .gongxiao p, .more p, .lmore p { display: inline-block; font-size: 13px; height: 26px; line-height: 26px; border: 1px solid #b4b5b8; color: #b4b5b8; padding: 2px; border-radius: 5px; border-top: 0 none; }
+
+.pingpai p:hover, .gongxiao p:hover, .more p:hover, .lmore p:hover { cursor: pointer; }
+
+.gongxiao { border-top: 1px solid #e9e9e9; }
+
+.more { display: none; }
+
+.more ul { height: 30px; }
+
+.lmore { display: none; }

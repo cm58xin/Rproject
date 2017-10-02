@@ -10,19 +10,26 @@ require.config({
 
 require(['jquery','common','IZONG'],function($,CO,IZ){
       
-       $('#header').load('common.html  .topnav'); 
+       $('#header').load('common.html  .topnav',function(){
+                  IZ.erweima();
+                  IZ.wode();
+                  IZ.mycar();
+       }); 
 
        $('#logo').load('common.html  .logo');
 
-       $('#denglu').load('common.html  .denglu');
-     setTimeout(function(){
+       $('#denglu').load('common.html  .denglu',function(){
+                IZ.dengluinput();
+                $('#lcode').text(CO.yanzhengma());
+       });
+     // setTimeout(function(){
              // console.log($('.w1').get(0))
-                 IZ.erweima();
-                 IZ.wode();
-                 IZ.mycar();
-                 IZ.dengluinput();
-                 $('#lcode').text(CO.yanzhengma());
-     }, 1000);
+                 // IZ.erweima();
+                 // IZ.wode();
+                 // IZ.mycar();
+                 // IZ.dengluinput();
+                 // $('#lcode').text(CO.yanzhengma());
+     // }, 1000);
      
 
 

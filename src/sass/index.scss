@@ -1,3 +1,4 @@
+
 @import 'var';
 
 
@@ -175,7 +176,7 @@ $height:33px;
     .allbrand{
       width:350px;
       position:absolute;
-      background:white;left:0;top:36px;
+      background:white;left:-10px;top:36px;
       display:none;
       z-index:99;
       h5{
@@ -446,6 +447,8 @@ $height:33px;
  
  /*滚动广告*/
  .announcement{
+    width:100%;
+    min-width:1200px;
     background:#ececec;
     height:20px;
   .container{
@@ -477,6 +480,8 @@ $height:33px;
 /*承诺免邮*/
  #promise{
   background:#F2F2F2;
+  width:100%;
+  min-width:1200px;
     .container{
        div{
 
@@ -503,11 +508,13 @@ $height:33px;
 
 /*每日必看*/
 .mustlook{ 
+      width:100%;
+      min-width:1200px;
       background:#F2F2F2;   
     a{   display:block;
          float:left; 
      &:nth-child(even){
-      margin-right:100px;
+      margin-left:100px;
      }   
    }    
 }
@@ -549,7 +556,10 @@ $height:33px;
 
 
 /*限时抢购*/
-.limitsell{ background:#F2F2F2;
+.limitsell{ 
+  width:100%;
+  min-width:1200px;
+  background:#F2F2F2;
       h1{
         display:block;width:160px;border-radius:8px;background:#fc3f83;
         height:36px;line-height:36px;
@@ -632,6 +642,8 @@ $height:33px;
 
 /*销售排行榜*/
 .sellranking {
+  width:100%;
+  min-width:1200px;
   background:#F2F2F2;
   .container{
         overflow:hidden;
@@ -691,6 +703,8 @@ $height:33px;
 
 /*新品*/
 .newgoods{
+  width:100%;
+  min-width:1200px;
     background:#F2F2F2;
     padding-bottom:15px;
   .container{
@@ -760,6 +774,8 @@ $height:33px;
 /*footer*/
 #footer{
     .promise{
+      width:100%;
+      min-width:1200px;
       background:white;
         .container{
            div{
@@ -836,6 +852,8 @@ $height:33px;
 
 #footer{
   .last{
+    width:100%;
+    min-width:1200px;
     height:70px;
     background:#000;
     ul{
@@ -850,6 +868,7 @@ $height:33px;
   }
 }
 
+/*右边固定的导航条*/
 .rightnav{
   position:relative;
   min-height:919px;

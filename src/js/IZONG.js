@@ -181,19 +181,96 @@ define(['jquery'],function($){
 
    // 左边点击手风琴效果
     dianji:function(){
-       console.log($("#ul1").next()) 
+ 
        $("#ul1").prev().on('click',function(){
-           // $('h6 i').addClass('iconfont icon-daosanjiao');
-           
-          // if()
-           $('#ul1').eq(0).css({"height":"512px"})
-           // $('ul').slideUp();
-           console.log(666)
-       })
+          if( $('#ul1').eq(0).height()===0){
+             $("#ul1").prev().find('i').addClass('iconfont icon-daosanjiao');
+             $("#ul1").prev().css({"background":"white"})
+             $('#ul1').eq(0).css({"height":"512px"})
+          }
+          else if($('#ul1').eq(0).height()===512){
+             $('#ul1').prev().find('i').removeClass(' icon-daosanjiao');
+             $("#ul1").prev().css({"background":"#e8e6e7"})
+             $('#ul1').eq(0).css({"height":"0"})          
+          }
+       });
+        
+       $("#ul2").prev().on('click',function(){
+          if( $('#ul2').eq(0).height()===0){
+             $("#ul2").prev().find('i').addClass('iconfont icon-daosanjiao');
+             $("#ul2").prev().css({"background":"white"})
+             $('#ul2').eq(0).css({"height":"512px"})
+          }
+          else if($('#ul2').eq(0).height()===512){
+             $('#ul2').prev().find('i').removeClass(' icon-daosanjiao');
+             $("#ul2").prev().css({"background":"#e8e6e7"})
+             $('#ul2').eq(0).css({"height":"0"})          
+          }
+       }) ;
+
+       $("#ul3").prev().on('click',function(){
+          if( $('#ul3').eq(0).height()===0){
+             $("#ul3").prev().find('i').addClass('iconfont icon-daosanjiao');
+             $("#ul3").prev().css({"background":"white"})
+             $('#ul3').eq(0).css({"height":"128px"})
+          }
+          else if($('#ul3').eq(0).height()===128){
+             $('#ul3').prev().find('i').removeClass(' icon-daosanjiao');
+             $("#ul3").prev().css({"background":"#e8e6e7"})
+             $('#ul3').eq(0).css({"height":"0"})          
+          }
+       }) ;
+       $("#ul4").prev().on('click',function(){
+          if( $('#ul4').eq(0).height()===0){
+             $("#ul4").prev().find('i').addClass('iconfont icon-daosanjiao');
+             $("#ul4").prev().css({"background":"white"})
+             $('#ul4').eq(0).css({"height":"160px"})
+          }
+          else if($('#ul4').eq(0).height()===160){
+             $('#ul4').prev().find('i').removeClass(' icon-daosanjiao');
+             $("#ul4").prev().css({"background":"#e8e6e7"})
+             $('#ul4').eq(0).css({"height":"0"})          
+          }
+       }) ;
+       $("#ul5").prev().on('click',function(){
+          if( $('#ul5').eq(0).height()===0){
+             $("#ul5").prev().find('i').addClass('iconfont icon-daosanjiao');
+             $("#ul5").prev().css({"background":"white"})
+             $('#ul5').eq(0).css({"height":"320px"})
+          }
+          else if($('#ul5').eq(0).height()===320){
+             $('#ul5').prev().find('i').removeClass(' icon-daosanjiao');
+             $("#ul5").prev().css({"background":"#e8e6e7"})
+             $('#ul5').eq(0).css({"height":"0"})          
+          }
+       }) ;
+       $("#ul6").prev().on('click',function(){
+          if( $('#ul6').eq(0).height()===0){
+             $("#ul6").prev().find('i').addClass('iconfont icon-daosanjiao');
+             $("#ul6").prev().css({"background":"white"})
+             $('#ul6').eq(0).css({"height":"128px"})
+          }
+          else if($('#ul6').eq(0).height()===128){
+             $('#ul6').prev().find('i').removeClass(' icon-daosanjiao');
+             $("#ul6").prev().css({"background":"#e8e6e7"})
+             $('#ul6').eq(0).css({"height":"0"})          
+          }
+       }) ;
+       $("#ul7").prev().on('click',function(){
+          if( $('#ul7').eq(0).height()===0){
+             $("#ul7").prev().find('i').addClass('iconfont icon-daosanjiao');
+             $("#ul7").prev().css({"background":"white"})
+             $('#ul7').eq(0).css({"height":"192px"})
+          }
+          else if($('#ul7').eq(0).height()===192){
+             $('#ul7').prev().find('i').removeClass(' icon-daosanjiao');
+             $("#ul7").prev().css({"background":"#e8e6e7"})
+             $('#ul7').eq(0).css({"height":"0"})          
+          }
+       }) ;
+
+      
     } 
-
-
-
 
 // 
   }
