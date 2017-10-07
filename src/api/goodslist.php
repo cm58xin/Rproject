@@ -3,7 +3,7 @@
 	$servername = 'localhost';
 	$username = 'root';
 	$password = '';
-	$database = 'rproject';
+	$database = 'h5_1705';
 
 	// 1）连接数据库
 	$conn = new mysqli($servername,$username,$password,$database);
@@ -17,7 +17,7 @@
 	$conn->set_charset('utf8');
 
 	// 编写查询sql语句
-	$sql = 'select * from goods';
+	$sql = 'select * from listpage';
 
 	// 利用sql语句查询数据库
 	// 查询结果集
@@ -26,6 +26,7 @@
 
 	// 使用查询结果集
 	$row = $result->fetch_all(MYSQLI_ASSOC);
+
 
 	echo json_encode($row,JSON_UNESCAPED_UNICODE);
 

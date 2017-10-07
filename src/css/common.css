@@ -100,7 +100,7 @@
 
 .nav .container > ul > li:hover > span { color: #EC3E7D; }
 
-.nav .container .allbrand { width: 350px; position: absolute; background: white; left: 0; top: 36px; display: none; z-index: 99; }
+.nav .container .allbrand { width: 350px; position: absolute; background: white; left: -9px; top: 36px; display: none; z-index: 99; }
 
 .nav .container .allbrand h5 { background: #ddd; height: 30px; line-height: 30px; padding-left: 20px; color: #EC3E7D; }
 
@@ -223,7 +223,7 @@
 
 .navleft .navleft_ul1 > li:nth-child(9):hover i { background: url("../img/img1/navleft1.png") no-repeat 11px -264px; }
 
-.navleft #face, .navleft #cai, .navleft #xiang, .navleft #mei, .navleft #xiong, .navleft #huli, .navleft #man, .navleft #yinger { position: absolute; z-index: 2; border: 1px solid #EC3E7D; background: white; left: 160px; display: none; }
+.navleft #face, .navleft #cai, .navleft #xiang, .navleft #mei, .navleft #xiong, .navleft #huli, .navleft #man, .navleft #yinger { position: absolute; z-index: 10; border: 1px solid #EC3E7D; background: white; left: 160px; display: none; }
 
 .navleft #face > div, .navleft #cai > div, .navleft #xiang > div, .navleft #mei > div, .navleft #xiong > div, .navleft #huli > div, .navleft #man > div, .navleft #yinger > div { margin-top: 10px; padding-left: 15px; }
 
@@ -402,6 +402,11 @@
 #zhuce .zc h1 span:nth-child(2) { cursor: pointer; padding-left: 5px; line-height: 45px; }
 
 #zhuce .zc h5 { padding-top: 40px; color: #3e3e3e; }
+
+/*登录页面,注册页面验证显示*/
+.xiansi { width: 105px; height: 400px; float: left; margin-top: 120px; }
+
+.xiansi p { height: 70px; line-height: 70px; }
 
 /*右边固定的导航条*/
 .rightnav { position: relative; min-height: 919px; width: 30px; height: 100%; background: #4c4c4c; position: fixed; right: 0; top: 0; }

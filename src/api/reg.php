@@ -1,7 +1,7 @@
 <?php
 	include 'connect.php';
 	
-	$username = isset($_GET['username']) ? $_GET['username'] : '';
+	$username = isset($_GET['username']) ? $_GET['username'] : ''; 
 	$password = isset($_GET['password']) ? $_GET['password'] : '123456';
 	$email = isset($_GET['email']) ? $_GET['email'] : '';
 	$grade = isset($_GET['grade']) ? $_GET['grade'] : '';
@@ -29,9 +29,9 @@
 		 */
 		// $password = password_hash($password,PASSWORD_DEFAULT);
 
-		$sql = "insert into user (username,password,email,grade,gender,birthday,phone) values('$username','$password','$email','$grade','$gender','$birthday','$phone')";
+		// $sql = "insert into user (username,password,email,grade,gender,birthday,phone) values('$username','$password','$email','$grade','$gender','$birthday','$phone')";
 
-
+	$sql = "insert into user (username,password,phone) values('$username','$password','$phone')";
 		// 获取查询结果
 		$result = $conn->query($sql);
 
@@ -41,9 +41,6 @@
 		    echo "Error: " . $sql . "<br>" . $conn->error;
 		}
 	}
-
-	
-	
 
 	// 释放查询内存(销毁)
 	//$result->free();

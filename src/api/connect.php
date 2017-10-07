@@ -3,7 +3,7 @@
 	$servername = 'localhost';
 	$username = 'root';
 	$password = '';
-	$database = 'rproject';
+	$database = 'h5_1705';
 
 	// 1）连接数据库
 	$conn = new mysqli($servername,$username,$password,$database);

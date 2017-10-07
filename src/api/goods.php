@@ -5,7 +5,7 @@
 	$id = isset($_GET['id']) ? $_GET['id'] : '';
 
 	// 编写查询sql语句
-	$sql = "select * from goods where id=$id";
+	$sql = "select * from listpage where id=$id";
 
 	// 利用sql语句查询数据库
 	// 查询结果集

@@ -29,28 +29,5 @@ require(['jquery','Rightnav','lnav','IZONG'],function($,RI,LN,IZ){
    LN.LNAV();
    LN.LNAVCLICK();
 
-   // $.ajax({
-   //     // 请求方式
-   //     type:'GET',
-   //     // 发送请求的地址
-   //     url:'api/goodslist.php',
-   //     // 返回的数据类型
-   //     datatype:'josn',
-   //     // async:true,
-   //     success:function(msg){
-   //          var msg=JSON.parse(msg);
-   //          // console.log(msg)
-   //        var   div=document.createElement('div');
-   //        // var  show=document.querySelector('#mshow')
-   //        div.innerHTML=msg.map(item=>{
-   //          console.log(item.imgurl)
-   //          return  `<a href="#" title="每日必看"><div class="look1"><img src="${item.imgurl}"  height="260" width="300" alt=""/></div><div class="look1 look2"><p>${item.name}</p><p>${item.dec1}</p><p>${item.dec2}</p><h4>${item.btn}</h4></div></a>`
-   //        }).join('');
-   //        // show.appendChild(div)
-   //        $('#mshow').html(div)
-
-   //     }
-   // });
-  
 
 })
