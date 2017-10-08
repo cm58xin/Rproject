@@ -4,11 +4,12 @@ require.config({
         // common:"./common",
         Rightnav:"./rightnav",
         IZONG:"./IZONG",
+        details:"./details",
     }
 
 })
 
-require(['jquery','Rightnav','IZONG'],function($,RI,IZ){
+require(['jquery','Rightnav','IZONG','details'],function($,RI,IZ,de){
 
     // 通过load加载共同的html结构
     $('#topnav').load('common.html  .topnav',function(){
@@ -32,7 +33,7 @@ require(['jquery','Rightnav','IZONG'],function($,RI,IZ){
         // 三级导航的显示和隐藏    
     $('.navul').on('mouseenter','li',function(){
             // console.log($(this).index())
-            console.log(666)
+           
             // console.log($(this))
             if( $(this).index()===0){
                 $('.navleft').show();
@@ -43,6 +44,30 @@ require(['jquery','Rightnav','IZONG'],function($,RI,IZ){
 
     });
 
+
+    $('#detailpage').load('common.html  .detailpage',function(){
+
+// 商品参数栏点击滑动    
+        de.huadong();
+// 商品参数栏滑动吸顶       
+        de.xiding();
+// 显示隐藏购物车的二维码
+       de.carerweima();
+//点击增减数量    
+        de.jiajian();
+
+// 小图点击左右动画
+        de.xiaotu();
+
+        
+// 添加到购物车
+        de.addcar();
+
+    });
+   
+
+   
+ //尾部       
     $('#footer').load('common.html  #footer');
 
 
@@ -51,12 +76,6 @@ require(['jquery','Rightnav','IZONG'],function($,RI,IZ){
          // 返回顶部
            RI.btop();
            RI.rnav();
-    });
-
-     
-      
-   
-        
-        
+    });    
 //
 })

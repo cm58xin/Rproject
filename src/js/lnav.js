@@ -1,7 +1,8 @@
 define(['jquery'],function($){
 
   return {
-
+   
+   // 滑动变色
     LNAV :function(){
                 var mheight=$('#mustlook').offset().top;
                 var limitheight=$('#limitsell').offset().top;
@@ -45,7 +46,7 @@ define(['jquery'],function($){
                 }
         },
 
-   
+   // 点击模拟滑轮滑动
     LNAVCLICK:function(){
              
          var mheight=$('#mustlook').offset().top;
@@ -55,10 +56,10 @@ define(['jquery'],function($){
          var newheight=$('#newgoods').offset().top;
 
 
-         console.log(mheight) ; 
-         console.log(limitheight) ;
-         console.log(sellrankheight) ;
-         console.log(newheight) ;
+         // console.log(mheight) ; 
+         // console.log(limitheight) ;
+         // console.log(sellrankheight) ;
+         // console.log(newheight) ;
 
              
              console.log($('.lnav ul').children())
@@ -83,9 +84,6 @@ define(['jquery'],function($){
             })
                
             
-
-
-
   }
   // 
 }

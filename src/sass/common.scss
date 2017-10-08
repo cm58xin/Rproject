@@ -415,7 +415,7 @@ $height:33px;
 
 /*footer*/
 #footer{
-   margin-top:800px;
+   // margin-top:800px;
     .promise{
       background:white;
         .container{
@@ -604,7 +604,9 @@ $height:33px;
           width:100px;height:100px;
           left:-140px;
          }
-        #bcar{width:230px;height:919px;background:white;z-index:5px;left:-230px;z-index:3;
+        #bcar{width:230px;
+          height:919px;
+          background:white;z-index:5px;left:-230px;z-index:3;
            box-shadow: -5px 0 5px #ccc;opacity:1;position:absolute;top:0px;
            display:none;
            h4{border-bottom:1px solid #ddd;height:41px;line-height:41px;text-align:left;padding-left:20px;font-size:14px;display:block;

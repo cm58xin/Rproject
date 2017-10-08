@@ -242,8 +242,6 @@
 .navleft #xiang, .navleft #mei, .navleft #xiong, .navleft #man, .navleft #yinger { width: 310px; height: 100px; }
 
 /*footer*/
-#footer { margin-top: 800px; }
-
 #footer .promise { background: white; }
 
 #footer .promise .container div { width: 170px; height: 126px; float: left; margin: 0 32px; background: url("../img/img1/promise_icon.png") no-repeat 0 57px; padding-left: 48px; }

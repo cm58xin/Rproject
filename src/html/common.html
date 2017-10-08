@@ -72,7 +72,7 @@
             <div class="navleft">
                 <ul class="navleft_ul1">
                     <li class="face clearfix">
-                         <i></i><a href="#">面部护肤<span class="iconfont  icon-you"></span></a>
+                         <i></i><a href="">面部护肤<span class="iconfont  icon-you"></span></a>
                        <div id="face">        
                            <div>
                              <h1>洁面/磨砂</h1>
@@ -285,8 +285,8 @@
                       
             </li>
             <li><a href="#"><img src="../img/img1/nav.gif" alt="" /></a></li>
-            <li><a href="#"><i>/</i><span>面部护肤</span><i>/</i></a></li>
-            <li><a href="#"><span>彩妆</span><i>/</i></a></li>
+            <li><a href="listpage.html"><i>/</i><span>面部护肤</span><i>/</i></a></li>
+            <li><a href="detailpage.html"><span>彩妆</span><i>/</i></a></li>
             <li><a href="#"><span>限时特卖</span><i>/</i></a></li>
             <li><a href="#"><span>贵宾专享</span><i>/</i></a></li>
             <li><a href="#"><span>闪电保税专区</span><i>/</i></a></li>
@@ -514,11 +514,16 @@
     <a href="#"><i class="iconfont icon-wode"></i></a>
     </p>
     <div id="me">我的账户<i class="iconfont icon-zuoyoug01"></i></div>
-    <p class="bcar"><i class="iconfont icon-gouwucheman"></i><br><span>我<br>的<br>购<br>物<br>车<br><b>0</b></span>
+    <p class="bcar"><i class="iconfont icon-gouwucheman"></i><br><span>我<br>的<br>购<br>物<br>车<br><b id="num">0</b></span>
+<!-- 购物车 -->
     <div id="bcar">
         <h4><span>购物车</span><span id="close">x</span></h4>
-        <div class="text">购物车中还没有商品，赶紧选购吧！</div>
+        <div class="text  " id="buycar">
+        购物车中还没有商品，赶紧选购吧！
+        
+        </div>
     </div>
+
     </p>
     <p class="shou"><a href="#"><i class="iconfont  icon-shixin"></i></a>
     <div id="shou">我的收藏<i class="iconfont icon-zuoyoug01"></i></div>
@@ -897,11 +902,125 @@
   </div>
 </div>
 
-
+<!-- 列表页数据的中心页面内容 -->
 <div class="goods">
   <div class="container">
       <div id="goods" class="clearfix">
            
       </div>
+  </div>
+</div>
+
+
+<!-- 详情页的中心页面内容 -->
+<div class="detailpage">
+  <div class="container">
+    <div class="title">
+    <span><a href="#">首页</a>/</span>
+    <span><a href="#">面部护肤</a>/</span>
+    <span><a href="#">面霜</a>/</span>
+    <span><a href="#">日晚霜</a>/</span>
+    <span><a href="#">肌源赋活修护精华霜</a></span>
+    </div>
+    <div class="products">
+      <div class="ftu">
+         <div class="fangda">
+            <div class="ptu ">
+              <img src="../img/img3/xiao1.jpg" alt="" />
+            </div>
+            <ul class="biao">
+              <li><i><img src="../img/img3/riben.png" alt=""  height="20" width="20" /></i>日本品牌</li>
+              <li><i><img src="../img/img3/hotsell.png" height="20" width="20" alt="" /></i>热卖中</li>
+              <li><i><img src="../img/img3/haoping.png" height="20" width="20" alt="" /></i>好评中</li>
+              <li><a href="#" title="点击查看大图"><i><img src="../img/img3/fangda.png" height="20" width="20" alt="" /></i></a></li>
+            </ul>
+           
+           <div class="xx">
+            <div class="btnleft"><i class="iconfont icon-zuoyoug01"></i></div>
+             <div class="xiaotu">
+                 <ul class="tul">
+                   <li class="tu1"><a href="#"><img src="../img/img3/xiao1.jpg" height="100" width="100" alt="" /></a></li>
+                   <li  class="tu2"><a href="#"><img src="../img/img3/xiao2.jpg" height="100" width="100" alt="" /></a></li>
+                   <li class="tu3"><a href="#"><img src="../img/img3/xiao3.jpg" height="100" width="100" alt="" /></a></li>
+                   <li class="tu4"><a href="#"><img src="../img/img3/xiao4.jpg" height="100" width="100" alt="" /></a></li>
+                   <li class="tu5"><a href="#"><img src="../img/img3/xiao5.jpg" height="100" width="100" alt="" /></a></li>
+                 </ul>
+             </div>
+            <div class="btnright">
+               <i class="iconfont icon-zuoyoug01"></i>
+             </div>    
+         </div>
+        </div>
+      </div>
+      
+      <div class="xinxi">
+          <h1><img src="../img/img3/tax-free_banner.jpg" height="50" width="495" alt="" /></h1>
+          <div class="xtitle">
+             <h4><span>[保税仓直送]</span><span>SK-II  R.N.A. POWER 肌源赋活修护精华霜 (2.5克)</span></h4>
+          </div>
+          <div class="price">
+             <h5><span class="nowprice">￥32.0</span><span ><del class="lastprice">市场价￥49.0</del></span><span class="zhekou">6.5折</span></h5>
+          </div>
+          <div class="huodong">
+              <h5><span class="hd">订单促销</span><span>保税仓商品满￥168免邮</span></h5>
+          </div>
+          <div class="ping">
+            <p><span>评分：</span><i><img src="../img/img3/ping.png" height="20" width="85" alt="" /></i><span>(1人评价)</span></p>
+          </div>
+          <div class="qty">
+            <h5><span>数量：</span><span class="jian">-</span><span class="bb"><input type="text" id="qty" value="1" /></span><span class="jia">+</span></h5>
+          </div>
+          <div class="jbtn">
+            <p><span class="jcar">加入购物车</span><span class="saosao">扫扫即加入购物车<i><img src="../img/img3/xiaoew.png" height="17" width="22" alt="" /></i><i class="iconfont icon-daosanjiao"></i></span></p>
+            <div class="carerweima">
+              <img src="../img/img3/carerweima.png" height="140" width="150" alt="" />
+            </div>
+          </div>
+          <div class="fenxiang">
+             <p><span><i class="iconfont icon-shixin"></i>收藏</span></p>
+             <p><span>分享到</span><a href="#"><img src="../img/img3/fenxiang.png" height="28" width="176" alt="" /></a></p>
+          </div>
+      </div>
+    </div>
+    <div class="title2">
+      <h5>猜你喜欢</h5>
+    </div>
+
+     <div class="youlike clearfix">
+       <ul>
+         <li><a href="#"><img src="../img/img3/like1.jpg" height="212" width="212" alt="" /><br>Leaders氨基酸针剂水库面膜 10片</a><br><b>￥</b><span>52.00</span></li>
+         <li><a href="#"><img src="../img/img3/like2.jpg" height="212" width="212" alt="" /><br>Leaders氨基酸针剂水库面膜 10片</a><br><b>￥</b><span>52.00</span></li>
+         <li><a href="#"><img src="../img/img3/like3.jpg" height="212" width="212" alt="" /><br>Leaders氨基酸针剂水库面膜 10片</a><br><b>￥</b><span>52.00</span></li>
+         <li><a href="#"><img src="../img/img3/like4.jpg" height="212" width="212" alt="" /><br>Leaders氨基酸针剂水库面膜 10片</a><br><b>￥</b><span>52.00</span></li>
+         <li><a href="#"><img src="../img/img3/like5.jpg" height="212" width="212" alt="" /><br>Leaders氨基酸针剂水库面膜 10片</a><br><b>￥</b><span>52.00</span></li>
+       </ul>
+     </div>
+    
+    <div class="xiangxi">
+      <div class="history">
+         <p>浏览记录</p>
+      </div>
+      <div class="xright">
+          <div class="xnav">
+              <ul>
+                <li><a >商品参数</a></li>
+                <li><a >商品详情</a></li>
+                <li><a >用户评价</a></li>
+                <li><a ><span class="nowprice">￥32.0</span></a></li>
+                <li><a ><span class="addcar">加入购物车</span></a></li>
+              </ul>
+          </div>
+          <div class="canshu">
+            <h4>商品参数</h4>
+          </div>
+          <div class="xiangqing">
+            <h4>商品详情</h4>
+          </div>
+          <div class="pingjia">
+            <h4>用户评价</h4>
+          </div>
+      </div>
+    </div>
+<!-- // -->
   </div>
 </div>
