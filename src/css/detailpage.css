@@ -16,7 +16,7 @@
 
 .fangda .biao > li:last-child { margin-left: 215px; }
 
-.ptu { width: 300px; height: 300px; border: 1px solid #ccc; margin: 10px auto; }
+.ptu { width: 300px; height: 300px; margin: 10px auto; }
 
 .ptu img { width: 298px; height: 298px; }
 
@@ -171,7 +171,5 @@
 .xiding { position: fixed; top: 0; box-shadow: 5px 5px 5px #ccc,-5px 5px 5px #ccc; }
 
 #buycar li { height: 50px; }
-
-#buycar li span:nth-child(2) { display: inline-block; }
 
 #buycar img { width: 50px; height: 50px; float: left; }

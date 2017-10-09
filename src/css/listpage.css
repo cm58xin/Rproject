@@ -122,6 +122,8 @@
 
 #goods .title p:nth-child(3) { position: absolute; display: inline-block; height: 39px; background: #f06597; text-align: center; line-height: 39px; color: white; left: 19px; margin-top: 10px; opacity: 0; }
 
+#goods .title p:nth-child(3):hover { cursor: pointer; }
+
 .gt { width: 192px; height: 190px; position: relative; z-index: 3; }
 
 .gt p { position: absolute; }

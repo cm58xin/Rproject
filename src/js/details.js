@@ -126,27 +126,27 @@ define(['jquery'],function($){
             $('#num').text(a)
        
        
-          // 获取商品描述  
-          var miaoshu=$('.xtitle').text();
-          console.log(miaoshu)
-          //获取图片路劲
-          var imgurl=$('.ptu').find('img').attr('src');
-          console.log(imgurl)
-          
-          var nowprice=$('.nowprice').text();
-          console.log(nowprice)
-            
-          var lastprice=$('.lastprice').text();
-          console.log(lastprice)
+              // 获取商品描述  
+              var miaoshu=$('.xtitle').text();
+              // console.log(miaoshu)
+              //获取图片路劲
+              var imgurl=$('.ptu').find('img').attr('src');
+              // console.log(imgurl)
+              
+              var nowprice=$('.nowprice').text();
+              // console.log(nowprice)
+                
+              var lastprice=$('.lastprice').text();
+              // console.log(lastprice)
 
-          var qty=$('#qty').val();
-          
-          console.log(qty)
-          
-          $('#b1').empty();
-          // $('.buycarul').
+              var qty=Number($('#qty').val());
+              
+              console.log(typeof(qty))
+              
+              $('#b1').empty();
+              // $('.buycarul').
 
-              // 查找数据库，有则报错，没有写入数据库           
+                  // 查找数据库，有则报错，没有写入数据库           
              $.ajax({
                 type:'GET',
                 url:'../api/buycar.php',
@@ -223,8 +223,7 @@ define(['jquery'],function($){
              }
            })
     
-  },
-
- //    
+      },
+//    
    }
 })

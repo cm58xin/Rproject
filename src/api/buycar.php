@@ -9,7 +9,7 @@
     $qty = isset($_GET['qty']) ? $_GET['qty'] : '';
 
 
-    //查看用户名是否已经存在
+    //查看是否已经存在
     $sql = "select miaoshu from buycar where miaoshu='$miaoshu'";
     $result = $conn->query($sql);
     if($result->num_rows>0){

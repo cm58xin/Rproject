@@ -124,44 +124,68 @@ require(['jquery','Rightnav','IZONG'],function($,RI,IZ){
      $('#fgoods').load('common.html  .goods',function(){
               // 从数据库拿数据
                 $.ajax({
-                //     // 请求方式
-                    type:'GET',
-                //     // 发送请求的地址
-                    url:'../api/goodslist.php',
-                //     // 返回的数据类型
-                    datatype:'josn',
-                //     // async:true,
-                    success:function(msg){
-                       var msg=JSON.parse(msg);  
-                       // console.log(msg) 
-                       var   ul=document.createElement('ul');
-                             ul.className="showgoods";
-                       var  goods=document.querySelector('#goods')
-                       ul.innerHTML=msg.map(item=>{
-                         // console.log(item.imgurl)
-                         return  `<li>
-                         <div class="lists">
-                         <div class="gt">
-                         <p><span>直降<br>上市</span></p>
-                         <a href="#" ><img src="${item.imgurl}"  height="200" width="180" alt="" class="tutu"/></a>
-                         <span><i><img src="${item.gurl}" height="15" width="14" alt="" /></i>${item.guojia}</span>
-                          </div>
-                          <div  class="chuizhi">
-                          <p><img src="${item.imgurl1}"  height="45" width="48" alt=""/></p>
-                          <p><img src="${item.imgurl2}"  height="45" width="48" alt=""/></p>
-                          <p><img src="${item.imgurl3}"  height="45" width="48" alt=""/></p>
-                          </div>
-                         <div class="title">
-                         <p><span>${item.yuan}${item.price}</span><span><del>${item.yuan}${item.last_price}</del></span><span>${item.zhekou}</span></p>
-                         <P><a href="#"><span>${item.mingzi}</span><br><span>${item.descrition}</span><br>${item.daxiao}</a></p>
-                          <p class="addcar">加入购物车</p>
-                         </div>
-                         </div>
-                         </li>`
-                       }).join('');
+                    //     // 请求方式
+                        type:'GET',
+                    //     // 发送请求的地址
+                        url:'../api/goodslist.php',
+                    //     // 返回的数据类型
+                        datatype:'josn',
+                    //     // async:true,
+                        success:function(msg){
+                           var msg=JSON.parse(msg);  
+                           // console.log(msg) 
+                           var   ul=document.createElement('ul');
+                                 ul.className="showgoods";
+                           var  goods=document.querySelector('#goods')
+                           ul.innerHTML=msg.map(item=>{
+                             // console.log(item.imgurl)
+                             return  `<li>
+                             <div class="lists">
+                             <div class="gt">
+                             <p><span>直降<br>上市</span></p>
+                             <a href="#" ><img src="${item.imgurl}"  height="200" width="180" alt="" class="tutu"/></a>
+                             <span><i><img src="${item.gurl}" height="15" width="14" alt="" /></i>${item.guojia}</span>
+                              </div>
+                              <div  class="chuizhi">
+                              <p><img src="${item.imgurl1}"  height="45" width="48" alt=""/></p>
+                              <p><img src="${item.imgurl2}"  height="45" width="48" alt=""/></p>
+                              <p><img src="${item.imgurl3}"  height="45" width="48" alt=""/></p>
+                              </div>
+                             <div class="title">
+                             <p><span>${item.yuan}${item.price}</span><span><del>${item.yuan}${item.last_price}</del></span><span>${item.zhekou}</span></p>
+                             <P><a href="#"><span>${item.mingzi}</span><br><span>${item.descrition}</span><br>${item.daxiao}</a></p>
+                              <p class="addcar">加入购物车</p>
+                             </div>
+                             </div>
+                             </li>`
+                           }).join('');
                        goods.appendChild(ul);
+                      
+
+                  $('.showgoods').on('click','.addcar',function(){
+                      // console.log($(this).parents('li').index())
+                      // 得到商品的id
+                      var id=$(this).parents('li').index()+1;
+                        // console.log(id);
+                     // 发起请求，查看数据库里面表的数据
+                     $.ajax({
+                        type:'GET',
+                        url:'../api/goods.php',
+                        data:{"id":id},
+                        success:function(data){
+                           // 从数据库的表里得到数据，并写入新的购物车表
+                             var data=JSON.parse(data);
+                             // console.log(data)
+                             
+                            
+                         }
+                      })
+
+
                        
-                   // 移入的动画效果   
+                    }) 
+
+                  // 移入的动画效果   
                   $('.showgoods').on('mouseenter','li',function(){
                        // console.log($(this).index())
                       if($(this).index()==0){
@@ -178,57 +202,57 @@ require(['jquery','Rightnav','IZONG'],function($,RI,IZ){
                        }
 
 
-                       else if($(this).index()==2){
+                      else if($(this).index()==2){
                              $(this).find('.lists').addClass('hg');
                            $(this).find('.chuizhi').stop().animate({opacity:1});
                             $(this).find('.lists').stop().animate({width:250,height:440});
                             $(this).find('.addcar').stop().animate({opacity:1,width:224});
                          }
 
-                         else if($(this).index()==3){
+                      else if($(this).index()==3){
                                $(this).find('.lists').addClass('hg');
                              $(this).find('.chuizhi').stop().animate({opacity:1});
                               $(this).find('.lists').stop().animate({width:250,height:440});
                               $(this).find('.addcar').stop().animate({opacity:1,width:224});
                            }
 
-                           else if($(this).index()==4){
+                      else if($(this).index()==4){
                                  $(this).find('.lists').addClass('hg');
                                $(this).find('.chuizhi').stop().animate({opacity:1});
                                 $(this).find('.lists').stop().animate({width:250,height:440});
                                 $(this).find('.addcar').stop().animate({opacity:1,width:224});
                              }
-                             else if($(this).index()==5){
+                      else if($(this).index()==5){
                                    $(this).find('.lists').addClass('hg');
                                  $(this).find('.chuizhi').stop().animate({opacity:1});
                                   $(this).find('.lists').stop().animate({width:250,height:440});
                                   $(this).find('.addcar').stop().animate({opacity:1,width:224});
                                }
-                               else if($(this).index()==6){
+                      else if($(this).index()==6){
                                      $(this).find('.lists').addClass('hg');
                                    $(this).find('.chuizhi').stop().animate({opacity:1});
                                     $(this).find('.lists').stop().animate({width:250,height:440});
                                     $(this).find('.addcar').stop().animate({opacity:1,width:224});
                                  }
-                                 else if($(this).index()==7){
+                      else if($(this).index()==7){
                                        $(this).find('.lists').addClass('hg');
                                      $(this).find('.chuizhi').stop().animate({opacity:1});
                                       $(this).find('.lists').stop().animate({width:250,height:440});
                                       $(this).find('.addcar').stop().animate({opacity:1,width:224});
                                    }
-                                   else if($(this).index()==8){
+                      else if($(this).index()==8){
                                          $(this).find('.lists').addClass('hg');
                                        $(this).find('.chuizhi').stop().animate({opacity:1});
                                         $(this).find('.lists').stop().animate({width:250,height:440});
                                         $(this).find('.addcar').stop().animate({opacity:1,width:224});
                                      }
-                                  else if($(this).index()==9){
+                      else if($(this).index()==9){
                                         $(this).find('.lists').addClass('hg');
                                       $(this).find('.chuizhi').stop().animate({opacity:1});
                                        $(this).find('.lists').stop().animate({width:250,height:440});
                                        $(this).find('.addcar').stop().animate({opacity:1,width:224});
                                     }
-                                else if($(this).index()==10){
+                      else if($(this).index()==10){
                                       $(this).find('.lists').addClass('hg');
                                     $(this).find('.chuizhi').stop().animate({opacity:1});
                                      $(this).find('.lists').stop().animate({width:250,height:440});
@@ -239,15 +263,10 @@ require(['jquery','Rightnav','IZONG'],function($,RI,IZ){
                       $(this).find('.lists').stop().animate({width:192,height:360});
                        $(this).find('.lists').removeClass('hg');
                        $(this).find('.addcar').stop().animate({opacity:0,width:0},100);
-                     }) ;
+
+
+              });
             
-
-
-
-
-
-
-
             // 右边换图
             // $('.chuizhi').on('mouseenter','p',function(){
             //       // console.log($(this).index())
@@ -265,9 +284,9 @@ require(['jquery','Rightnav','IZONG'],function($,RI,IZ){
 
                 }
 
-              });
+          });
          
-
+      
      }); 
 //
 })
