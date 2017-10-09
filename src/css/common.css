@@ -433,7 +433,7 @@
 
 .rightnav #bcar h4 span:nth-child(2):hover { cursor: pointer; }
 
-.rightnav #bcar .text { color: #222; padding: 20px 10px; }
+.rightnav #bcar .text { color: #222; }
 
 .rightnav p { display: block; width: 30px; text-align: center; }
 

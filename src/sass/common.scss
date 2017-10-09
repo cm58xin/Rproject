@@ -609,13 +609,18 @@ $height:33px;
           background:white;z-index:5px;left:-230px;z-index:3;
            box-shadow: -5px 0 5px #ccc;opacity:1;position:absolute;top:0px;
            display:none;
-           h4{border-bottom:1px solid #ddd;height:41px;line-height:41px;text-align:left;padding-left:20px;font-size:14px;display:block;
+           h4{
+             border-bottom:1px solid #ddd;height:41px;line-height:41px;text-align:left;
+             padding-left:20px;
+             font-size:14px;display:block;
           span:nth-child(1){color:black;display:block;width:45px;height:40px;float:left;}
           span:nth-child(2){color:black;display:block;border:1px solid #222;width:20px;height:20px;border-radius:50%;line-height:20px;text-align:center;float:left;margin:10px 0 10px 128px;
             &:hover{cursor:pointer;}
             }
          }
-           .text{color:#222;padding:20px 10px;}
+           .text{color:#222;
+            // padding:20px 10px;
+          }
       
      }
 

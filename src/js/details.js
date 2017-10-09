@@ -42,8 +42,8 @@ define(['jquery'],function($){
    xiding:function(){
          
          var xheight=$('.xnav').offset().top;
-         // console.log(xheight);
-       // $('.xnav')
+           // console.log(xheight);
+           // $('.xnav')
            window.onscroll=function(){
                if(window.scrollY>=xheight){
                   $('.xnav').addClass('xiding');
@@ -122,18 +122,106 @@ define(['jquery'],function($){
   addcar:function(){
            var a=0;
         $('.jcar').click(function(){
-           // console.log($('.ptu').clone()) ;   
-            $('.ptu').clone().appendTo('#buycar');
-            $('.xtitle').clone().appendTo('#buycar')
-            $('.price').clone().appendTo('#buycar');
-            $('.huodong').clone().appendTo('#buycar')
-
+            a=a+1;
+            $('#num').text(a)
+       
+       
+          // 获取商品描述  
+          var miaoshu=$('.xtitle').text();
+          console.log(miaoshu)
+          //获取图片路劲
+          var imgurl=$('.ptu').find('img').attr('src');
+          console.log(imgurl)
+          
+          var nowprice=$('.nowprice').text();
+          console.log(nowprice)
             
+          var lastprice=$('.lastprice').text();
+          console.log(lastprice)
 
-             a=a+1;
-             $('#num').text(a)
+          var qty=$('#qty').val();
+          
+          console.log(qty)
+          
+          $('#b1').empty();
+          // $('.buycarul').
 
+              // 查找数据库，有则报错，没有写入数据库           
+             $.ajax({
+                type:'GET',
+                url:'../api/buycar.php',
+                data:{"id":a,"miaoshu":miaoshu,"imgurl":imgurl,"nowprice":nowprice,"lastprice":lastprice,"qty":qty},
+                success:function(data){
+                  if(data==="fail"){
+
+                     $('.bqty').text(qty);
+                    
+
+                  }else{
+                  $.ajax({
+                     //     // 请求方式
+                         type:'GET',
+                     //     // 发送请求的地址
+                         url:'../api/buycar2.php',
+                     //     // 返回的数据类型
+                         datatype:'josn',
+                     //     // async:true,
+                         success:function(msg){
+
+                            $('#b1').empty();
+                            // console.log(msg)
+                            var msg=JSON.parse(msg);  
+                            // console.log(msg)
+                            var  buycar=document.querySelector('#buycar')
+                            var   ul=document.createElement('ul');
+                                  ul.className="buycarul";
+                                ul.innerHTML=msg.map(item=>{
+                                  return `<li>
+                                  <img src="${item.imgurl}"/>
+                                  <span>${item.miaoshu}</span>
+                                  <span>${item.nowprice}</span>
+                                  <span><del>${item.lastprice}</del></span>
+                                 <span class="bqty">${item.qty}</span>
+                                  </li>`
+                                }).join('');
+                              buycar.appendChild(ul);
+                          }
+                       })
+                  }
+                }
+             })
         })
+
+
+       // 平时保存
+         $.ajax({
+         //     // 请求方式
+             type:'GET',
+         //     // 发送请求的地址
+             url:'../api/buycar2.php',
+         //     // 返回的数据类型
+             datatype:'josn',
+         //     // async:true,
+             success:function(msg){
+                $('#b1').empty();
+                // console.log(msg)
+                var msg=JSON.parse(msg);  
+                // console.log(msg)
+                var  buycar=document.querySelector('#buycar')
+                var   ul=document.createElement('ul');
+                      ul.className="buycarul";
+                    ul.innerHTML=msg.map(item=>{
+                      return `<li>
+                      <img src="${item.imgurl}"/>
+                      <span>${item.miaoshu}</span>
+                      <span>${item.nowprice}</span>
+                      <span><del>${item.lastprice}</del></span>
+                      <span class="bqty">数量：${item.qty}</span>
+                      </li>`
+                    }).join('');
+                  buycar.appendChild(ul);
+             }
+           })
     
   },
 
